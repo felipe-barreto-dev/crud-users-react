@@ -4,13 +4,24 @@
   "description": "- Git Alias ```bash git config --global init.defaultBranch dev ``` - Extensões do vscode (Eslint, EditorConfig For VS Code) - Adicionar  a seguinte regra no settings.json do vscode  ```javascript  \"editor.formatOnSave\": true,    \"prettier.requireConfig\": true,    \"editor.codeActionsOnSave\": {      \"source.fixAll.eslint\": true    }, ```",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack-dev-server --open",
+    "test": "jest --passWithNoTests --no-cache --runInBand",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix",
+    "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^18.11.0",
+    "@typescript-eslint/eslint-plugin": "^5.40.0",
+    "@typescript-eslint/parser": "^5.40.0",
+    "eslint": "^8.25.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.31.10",
+    "prettier": "^2.7.1",
     "typescript": "^4.8.4"
   }
 }
