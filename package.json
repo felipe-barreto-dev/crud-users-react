@@ -1,0 +1,12 @@
+{
+  "name": "crud-users-react",
+  "version": "1.0.0",
+  "description": "- Git Alias ```bash git config --global init.defaultBranch dev ``` - Extensões do vscode (Eslint, EditorConfig For VS Code) - Adicionar  a seguinte regra no settings.json do vscode  ```javascript  \"editor.formatOnSave\": true,    \"prettier.requireConfig\": true,    \"editor.codeActionsOnSave\": {      \"source.fixAll.eslint\": true    }, ```",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
