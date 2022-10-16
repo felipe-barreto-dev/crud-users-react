@@ -1,3 +1,5 @@
+type Base64 = string;
+
 export type UserModel = {
   id: number;
   name: string;
@@ -5,5 +7,5 @@ export type UserModel = {
   status: boolean;
   gender: string;
   phoneNumber: string;
-  profilePicture: File;
+  profilePicture: Base64;
 };
